@@ -22,16 +22,60 @@ A modern implementation of the classic Tic-Tac-Toe game built with React and Tai
 ## Project Structure
 
 ```
-src/
-  ├── components/
-  │   ├── Game.jsx     # Main game component
-  │   ├── Board.jsx    # Game board component
-  │   └── Square.jsx   # Individual square component
-  ├── hooks/
-  │   └── useGame.js   # Custom hook for game logic
-  ├── App.jsx
-  └── index.css
+tic-tac-toe/
+├── .vscode/                # VS Code configuration
+├── public/                 # Static assets
+├── src/                    # Source code
+│   ├── components/         # React components
+│   │   ├── Game.jsx       # Main game component
+│   │   ├── Board.jsx      # Game board component
+│   │   └── Square.jsx     # Individual square component
+│   ├── hooks/             # Custom React hooks
+│   │   └── useGame.js     # Game logic and state management
+│   ├── App.jsx            # Root application component
+│   └── index.css          # Global styles
+├── .gitignore             # Git ignore rules
+├── eslint.config.js       # ESLint configuration
+├── index.html             # Entry HTML file
+├── package.json           # Project dependencies and scripts
+├── postcss.config.js      # PostCSS configuration
+├── tailwind.config.js     # Tailwind CSS configuration
+└── vite.config.js         # Vite build configuration
 ```
+
+## Development
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd tic-tac-toe
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## Getting Started
 
@@ -56,11 +100,3 @@ src/
 - **Custom Hook**: Game logic is extracted into a custom hook (useGame) to separate business logic from UI components.
 - **Tailwind CSS**: Used for rapid UI development and consistent styling across components.
 - **State Management**: React's built-in useState hook is sufficient for this application's complexity level.
-
-## Future Improvements
-
-- Add game history tracking
-- Implement an AI opponent
-- Add animations for moves and wins
-- Add sound effects
-- Save game state to localStorage
